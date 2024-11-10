@@ -28,15 +28,15 @@ class MockAirlineAPI:
         # Simulate API latency
         time.sleep(random.uniform(0.5, 2))
         
-        # Random chance (10%) of no flights available
-        if random.random() < 0.1:
+        # Random chance (5%) of no flights available
+        if random.random() < 0.05:
             return []
             
         # Random number of flights to return (2-5)
         num_flights = random.randint(2, 5)
 
         route_info = {
-            "base_price": random.randint(200, 500),
+            "base_price": random.randint(200, 600),
             "duration": random.randint(120, 480)
         }
 
@@ -120,8 +120,7 @@ class MockAirlineAPI:
             print(f"Origin: {flight['origin']} ({flight['origin_city']})")
             print(f"Destination: {flight['destination']} ({flight['destination_city']})")
             print(f"Departure Time: {flight['departure_time']}")
-            print(f"Arrival Time        # Fabricate flight data
-        route_in: {flight['arrival_time']}")
+            print(f"Arrival Time: {flight['arrival_time']}")
             print(f"Duration (minutes): {flight['duration_minutes']}")
             print(f"Price: ${flight['price']:.2f}")
             print(f"Seats Available: {flight['seats_available']}")
@@ -185,7 +184,7 @@ class MockAirlineAPI:
         """
         time.sleep(random.uniform(0.2, 1.0))  # Simulate API latency
         
-        # 20% chance flight is no longer available
+        # 15% chance flight is no longer available
         if random.random() < 0.2:
             return {
                 "flight_id": flight_id,
@@ -193,8 +192,8 @@ class MockAirlineAPI:
                 "reason": "Flight no longer available"
             }
         
-        # 30% chance of price change
-        if random.random() < 0.3:
+        # 20% chance of price change
+        if random.random() < 0.2:
             price_change = expected_price * random.uniform(-0.2, 0.3)
             new_price = round(expected_price + price_change, 2)
             return {
