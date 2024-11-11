@@ -1,0 +1,48 @@
+{
+    "cities": {
+        "NYC": "New York City",
+        "LAX": "Los Angeles",
+        "CHI": "Chicago",
+        "MIA": "Miami",
+        "SFO": "San Francisco",
+        "LAS": "Las Vegas",
+        "BOS": "Boston",
+        "SEA": "Seattle",
+        "HNL": "Honolulu",
+        "NOL": "New Orleans"
+    },
+    "hotel_chains": [
+        ["Marriott", "MAR"],
+        ["Hilton", "HIL"],
+        ["Hyatt", "HYT"],
+        ["InterContinental", "IHG"],
+        ["Wyndham", "WYN"],
+        ["Accor", "ACC"],
+        ["Choice", "CHC"],
+        ["Best Western", "BWI"]
+    ],
+    "room_types": [
+        "Standard",
+        "Deluxe",
+        "Suite",
+        "Executive",
+        "Presidential"
+    ],
+    "amenities": [
+        "WiFi",
+        "Pool",
+        "Fitness Center",
+        "Restaurant",
+        "Bar",
+        "Spa",
+        "Room Service",
+        "Business Center",
+        "Parking",
+        "Airport Shuttle",
+        "Concierge",
+        "Laundry Service",
+        "Pet Friendly",
+        "Conference Facilities",
+        "Electric Vehicle Charging"
+    ]
+} 
